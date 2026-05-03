@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="BioLife.Application/BioLife.Application.csproj" />
+  <Project Path="BioLife.Domain/BioLife.Domain.csproj" />
+  <Project Path="BioLife.Infrastructure/BioLife.Infrastructure.csproj" />
+  <Project Path="BioLife.Persistence/BioLife.Persistence.csproj" />
+  <Project Path="BioLife/BioLife.csproj" />
+</Solution>

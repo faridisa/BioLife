@@ -1,0 +1,14 @@
+C:\Users\asus\Desktop\BioLife\BioLife.Application\obj\Debug\net10.0\BioLife.Application.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\BioLife\BioLife.Application\obj\Debug\net10.0\BioLife.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\BioLife\BioLife.Application\obj\Debug\net10.0\BioLife.Application.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\BioLife\BioLife.Application\obj\Debug\net10.0\BioLife.Application.AssemblyInfo.cs
+C:\Users\asus\Desktop\BioLife\BioLife.Application\obj\Debug\net10.0\BioLife.Application.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\BioLife\BioLife.Application\bin\Debug\net10.0\BioLife.Application.deps.json
+C:\Users\asus\Desktop\BioLife\BioLife.Application\bin\Debug\net10.0\BioLife.Application.runtimeconfig.json
+C:\Users\asus\Desktop\BioLife\BioLife.Application\bin\Debug\net10.0\BioLife.Application.dll
+C:\Users\asus\Desktop\BioLife\BioLife.Application\bin\Debug\net10.0\BioLife.Application.pdb
+C:\Users\asus\Desktop\BioLife\BioLife.Application\obj\Debug\net10.0\BioLife.Application.dll
+C:\Users\asus\Desktop\BioLife\BioLife.Application\obj\Debug\net10.0\refint\BioLife.Application.dll
+C:\Users\asus\Desktop\BioLife\BioLife.Application\obj\Debug\net10.0\BioLife.Application.pdb
+C:\Users\asus\Desktop\BioLife\BioLife.Application\obj\Debug\net10.0\BioLife.Application.genruntimeconfig.cache
+C:\Users\asus\Desktop\BioLife\BioLife.Application\obj\Debug\net10.0\ref\BioLife.Application.dll
