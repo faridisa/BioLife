@@ -79,6 +79,10 @@
             "Microsoft.Extensions.Identity.Core": {
               "target": "Package",
               "version": "[10.0.7, )"
+            },
+            "System.Security.Cryptography.Xml": {
+              "target": "Package",
+              "version": "[10.0.7, )"
             }
           },
           "imports": [
@@ -423,7 +427,7 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[12.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -805,10 +809,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[10.0.0, )"
-            },
-            "Microsoft.Extensions.Identity.Core": {
-              "target": "Package",
-              "version": "[10.0.7, )"
             }
           },
           "imports": [

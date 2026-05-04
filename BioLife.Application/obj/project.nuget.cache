@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4sTALHowUpY=",
+  "dgSpecHash": "ZEdz8ZUqNDI=",
   "success": true,
   "projectFilePath": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Application\\BioLife.Application.csproj",
   "expectedPackageFiles": [
@@ -79,36 +79,11 @@
     "C:\\Users\\asus\\.nuget\\packages\\system.memory.data\\8.0.1\\system.memory.data.8.0.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.reflection.metadataloadcontext\\7.0.0\\system.reflection.metadataloadcontext.7.0.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.resources.extensions\\9.0.0\\system.resources.extensions.9.0.0.nupkg.sha512",
-    "C:\\Users\\asus\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.4\\system.security.cryptography.pkcs.9.0.4.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.security.cryptography.pkcs\\10.0.7\\system.security.cryptography.pkcs.10.0.7.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.4\\system.security.cryptography.protecteddata.9.0.4.nupkg.sha512",
-    "C:\\Users\\asus\\.nuget\\packages\\system.security.cryptography.xml\\9.0.0\\system.security.cryptography.xml.9.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.security.cryptography.xml\\10.0.7\\system.security.cryptography.xml.10.0.7.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.security.permissions\\9.0.0\\system.security.permissions.9.0.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.windows.extensions\\9.0.0\\system.windows.extensions.9.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-37gx-xxp4-5rgx",
-      "projectPath": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Application\\BioLife.Application.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Application\\BioLife.Application.csproj",
-      "libraryId": "System.Security.Cryptography.Xml",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3x6-4m5h-cxqf",
-      "projectPath": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Application\\BioLife.Application.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Application\\BioLife.Application.csproj",
-      "libraryId": "System.Security.Cryptography.Xml",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

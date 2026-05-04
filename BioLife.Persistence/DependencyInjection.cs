@@ -18,15 +18,16 @@ namespace BioLife.Persistence
          {
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
             b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName)));
-            services.AddIdentityCore<AppUser>(options => {
+            services.AddIdentity<AppUser, AppRole>(options => {
                 options.Password.RequireDigit = false;
                 options.Password.RequireLowercase = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireUppercase = false;
                 options.Password.RequiredLength = 6;
             })
-            .AddEntityFrameworkStores<AppDbContext>()
-            .AddDefaultTokenProviders();
+    .AddRoles<AppRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
 
             services.AddScoped<IAppDbContext>(provider => provider.GetRequiredService<AppDbContext>());
             return services;

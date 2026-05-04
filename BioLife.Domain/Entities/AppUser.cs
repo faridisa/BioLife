@@ -9,8 +9,14 @@ namespace BioLife.Domain.Entities
     {
         public string? FullName { get; set; }
     }
-    public class  AppRole : IdentityRole
+    public class AppRole : IdentityRole
     {
-        
+        public AppRole()
+        {
+        }
+
+        public AppRole(string roleName) : base(roleName)
+        {
+        }
     }
 }

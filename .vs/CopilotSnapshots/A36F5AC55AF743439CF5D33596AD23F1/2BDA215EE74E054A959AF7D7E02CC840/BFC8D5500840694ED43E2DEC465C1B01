@@ -1,0 +1,42 @@
+﻿namespace BioLife
+{
+    public class Program
+    {
+        public static async Task Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the container.
+            builder.Services.AddControllersWithViews();
+            builder.Services.AddApplicationServices();
+            builder.Services.AddPresistenceServices(builder.Configuration);
+
+            var app = builder.Build();
+
+            // Seed data
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+               await BioLife.Presistence.DataSeed.SeedRolesAndAdminAsync(services);
+            }
+
+
+            // Configure the HTTP request pipeline.
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler("/Home/Error");
+            }
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.MapStaticAssets();
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}")
+                .WithStaticAssets();
+
+            app.Run();
+        }
+    }
+}

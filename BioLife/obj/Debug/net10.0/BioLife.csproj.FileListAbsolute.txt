@@ -10,7 +10,12 @@ C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.pdb
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\AutoMapper.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\Azure.Core.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\Azure.Identity.dll
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\FluentValidation.dll
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\Humanizer.dll
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\MediatR.dll
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\MediatR.Contracts.dll
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\Microsoft.Build.dll
@@ -142,6 +147,14 @@ C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\runtimes\win-arm64\nativ
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\runtimes\win\lib\net9.0\System.Windows.Extensions.dll
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Application.dll
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Domain.dll
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Infrastructure.dll
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Persistence.dll
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Application.pdb
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Domain.pdb
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Infrastructure.pdb
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Persistence.pdb
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.csproj.AssemblyReference.cache
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\rpswa.dswa.cache.json
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.GeneratedMSBuildEditorConfig.editorconfig
@@ -151,6 +164,7 @@ C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.csproj.CoreCompi
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.RazorAssemblyInfo.cache
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.RazorAssemblyInfo.cs
+C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.sourcelink.json
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -186,11 +200,9 @@ C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\staticwebassets.build.js
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.csproj.Up2Date
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.dll
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\refint\BioLife.dll
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.pdb
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.genruntimeconfig.cache
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\ref\BioLife.dll
-C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.sourcelink.json
