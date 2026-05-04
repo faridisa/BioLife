@@ -1,0 +1,36 @@
+﻿using BioLife.Application.Common.Interfaces;
+using BioLife.Domain.Entities;
+using BioLife.Persistence.Contexts;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BioLife.Persistence
+{
+    public static class DependencyInjection
+    {
+         public static IServiceCollection AppPersistenceServices(this IServiceCollection services, IConfiguration configuration)
+         {
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
+            b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName)));
+            services.AddIdentityCore<AppUser>(options => {
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequiredLength = 6;
+            })
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
+
+            services.AddScoped<IAppDbContext>(provider => provider.GetRequiredService<AppDbContext>());
+            return services;
+
+        }
+    }
+}

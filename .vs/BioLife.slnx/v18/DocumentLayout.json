@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\asus\\Desktop\\BioLife\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5296F14-7B90-486B-8C5D-D44150BCD726}|BioLife.Persistence\\BioLife.Persistence.csproj|c:\\users\\asus\\desktop\\biolife\\biolife.persistence\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5296F14-7B90-486B-8C5D-D44150BCD726}|BioLife.Persistence\\BioLife.Persistence.csproj|solutionrelative:biolife.persistence\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9D7B381-21B3-C5D5-D81E-527B7E8B3EFE}|BioLife.Persistence\\BioLife.Persistence.csproj|c:\\users\\asus\\desktop\\biolife\\biolife.persistence\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9D7B381-21B3-C5D5-D81E-527B7E8B3EFE}|BioLife.Persistence\\BioLife.Persistence.csproj|solutionrelative:biolife.persistence\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9D7B381-21B3-C5D5-D81E-527B7E8B3EFE}|BioLife.Persistence\\BioLife.Persistence.csproj|c:\\users\\asus\\desktop\\biolife\\biolife.persistence\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9D7B381-21B3-C5D5-D81E-527B7E8B3EFE}|BioLife.Persistence\\BioLife.Persistence.csproj|solutionrelative:biolife.persistence\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9D7B381-21B3-C5D5-D81E-527B7E8B3EFE}|BioLife.Persistence\\BioLife.Persistence.csproj|c:\\users\\asus\\desktop\\biolife\\biolife.persistence\\biolife.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E9D7B381-21B3-C5D5-D81E-527B7E8B3EFE}|BioLife.Persistence\\BioLife.Persistence.csproj|solutionrelative:biolife.persistence\\biolife.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4FCBB9-1B4F-8577-99B3-161DF51FFF75}|BioLife.Infrastructure\\BioLife.Infrastructure.csproj|c:\\users\\asus\\desktop\\biolife\\biolife.infrastructure\\biolife.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EA4FCBB9-1B4F-8577-99B3-161DF51FFF75}|BioLife.Infrastructure\\BioLife.Infrastructure.csproj|solutionrelative:biolife.infrastructure\\biolife.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA4FCBB9-1B4F-8577-99B3-161DF51FFF75}|BioLife.Infrastructure\\BioLife.Infrastructure.csproj|c:\\users\\asus\\desktop\\biolife\\biolife.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA4FCBB9-1B4F-8577-99B3-161DF51FFF75}|BioLife.Infrastructure\\BioLife.Infrastructure.csproj|solutionrelative:biolife.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +42,65 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "BioLife.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "BioLife.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAABBwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T13:43:46.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BioLife.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Infrastructure\\BioLife.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "BioLife.Infrastructure\\BioLife.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Infrastructure\\BioLife.Infrastructure.csproj",
+              "RelativeToolTip": "BioLife.Infrastructure\\BioLife.Infrastructure.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-04T13:43:22.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BioLife.Persistence",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Persistence\\BioLife.Persistence.csproj",
+              "RelativeDocumentMoniker": "BioLife.Persistence\\BioLife.Persistence.csproj",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Persistence\\BioLife.Persistence.csproj",
+              "RelativeToolTip": "BioLife.Persistence\\BioLife.Persistence.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-04T13:43:11.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Persistence\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "BioLife.Persistence\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Persistence\\DependencyInjection.cs",
+              "RelativeToolTip": "BioLife.Persistence\\DependencyInjection.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T13:26:24.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Persistence\\Contexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "BioLife.Persistence\\Contexts\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Persistence\\Contexts\\AppDbContext.cs",
               "RelativeToolTip": "BioLife.Persistence\\Contexts\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-03T17:14:36.692Z",
               "EditorCaption": ""
