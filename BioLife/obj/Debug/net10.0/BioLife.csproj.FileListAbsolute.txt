@@ -149,11 +149,9 @@ C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\runtimes\win-x86\native\
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\runtimes\win\lib\net9.0\System.Windows.Extensions.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Application.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Domain.dll
-C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Infrastructure.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Persistence.dll
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Application.pdb
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Domain.pdb
-C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Infrastructure.pdb
 C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Persistence.pdb
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.csproj.AssemblyReference.cache
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\rpswa.dswa.cache.json
@@ -206,3 +204,6 @@ C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\refint\BioLife.dll
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.pdb
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\BioLife.genruntimeconfig.cache
 C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\ref\BioLife.dll
+C:\Users\asus\Desktop\BioLife\BioLife\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Infrastructure.dll
+C:\Users\asus\Desktop\BioLife\BioLife\bin\Debug\net10.0\BioLife.Infrastructure.pdb

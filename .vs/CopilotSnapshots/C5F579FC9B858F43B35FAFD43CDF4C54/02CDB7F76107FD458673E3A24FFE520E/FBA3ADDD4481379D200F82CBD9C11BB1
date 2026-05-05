@@ -1,0 +1,85 @@
+﻿@model BioLife.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="login-wrapper d-flex align-items-center justify-content-center" style="min-height: 80vh; background-color: #e9ecef; padding: 40px 15px;">
+    <div class="login-box shadow d-flex flex-wrap overflow-hidden bg-white" style="max-width: 850px; width: 100%; border-radius: 0;">
+        <!-- Sol Tərəf: Form -->
+        <div class="col-md-6 p-5 d-flex flex-column justify-content-center bg-white">
+            <h2 class="text-center font-weight-bold mb-4" style="color: #333;">Signin</h2>
+
+            <form asp-action="Login" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="form-group mb-3">
+                    <input asp-for="Email" class="form-control rounded-0 border-0 p-3" style="background-color: #f2f2f2;" placeholder="Sizin elektron ünvanınız" required />
+                    <span asp-validation-for="Email" class="text-danger small mt-1 d-block"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <input asp-for="Password" type="password" class="form-control rounded-0 border-0 p-3" style="background-color: #f2f2f2;" placeholder="********" required />
+                    <span asp-validation-for="Password" class="text-danger small mt-1 d-block"></span>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="form-check custom-checkbox">
+                        <input asp-for="RememberMe" class="form-check-input" id="RememberMeInfo" />
+                        <label class="form-check-label text-muted small" for="RememberMeInfo" style="cursor: pointer;">
+                            Yadda saxla
+                        </label>
+                    </div>
+                    <a asp-action="ForgotPassword" class="text-decoration-none small" style="color: #179b5c;">Şifrəmi unutdum?</a>
+                </div>
+
+                <button type="submit" class="btn btn-block text-white p-2 mb-4 rounded-0" style="background-color: #119760; font-weight: 500;">
+                    Signin
+                </button>
+
+                <div class="text-center text-muted mb-3 small">
+                    or signin with
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-sm text-white" style="background-color: #3b5998; border-radius: 50%; width: 35px; height: 35px; display: inline-flex; align-items: center; justify-content: center; margin: 0 5px;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn-sm text-white" style="background-color: #db4a39; border-radius: 50%; width: 35px; height: 35px; display: inline-flex; align-items: center; justify-content: center; margin: 0 5px;"><i class="fab fa-google"></i></a>
+                    <a href="#" class="btn btn-sm text-white" style="background-color: #0077b5; border-radius: 50%; width: 35px; height: 35px; display: inline-flex; align-items: center; justify-content: center; margin: 0 5px;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Sağ Tərəf: Info -->
+        <div class="col-md-6 p-5 d-flex flex-column align-items-center justify-content-center text-center text-white" style="background: linear-gradient(135deg, #25ce7b 0%, #119760 100%);">
+            <h2 class="font-weight-bold mb-3">Welcome back!</h2>
+            <p class="mb-4" style="font-size: 0.9rem; line-height: 1.6; opacity: 0.95;">
+                Welcome back! We are so happy to have you here. It's great to see you again. We hope you had a safe and enjoyable time away.
+            </p>
+            <a asp-action="Register" class="btn text-white px-4 py-2" style="background-color: rgba(255, 255, 255, 0.15); border: none; border-radius: 30px; font-size: 0.85rem; font-weight: 500;">
+                No account yet? Signup.
+            </a>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<style>
+    .login-box {
+        min-height: 500px;
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        border-bottom: 2px solid #119760 !important;
+        background-color: #e9e9e9 !important;
+    }
+
+    @@media (max-width: 768px) {
+        .login-box {
+            flex-direction: column;
+        }
+        .col-md-6 {
+            width: 100%;
+        }
+    }
+</style>

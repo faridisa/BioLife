@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="@Url.Content("~/")" />
     <title>Biolife - Organic Food</title>
     <link href="https://fonts.googleapis.com/css?family=Cairo:400,600,700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&amp;display=swap" rel="stylesheet">
@@ -52,7 +53,10 @@
                             <option value="usd">¥ JPY (Yen)</option>
                         </select>
                     </li>
-                    <li><a href="login.html" class="login-link"><i class="biolife-icon icon-login"></i>My Account</a></li>
+                    <li>
+                        <a asp-controller="Account" asp-action="Login" class="btn btn-default btn-xs">Login</a>
+                        <a asp-controller="Account" asp-action="Register" class="btn btn-default btn-xs" style="margin-left:6px;">Register</a>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -1,0 +1,45 @@
+﻿@model BioLife.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="page-contain">
+    <div class="container sm-margin-top-60px xs-margin-top-40px">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-7 col-sm-9 col-xs-12">
+                <div class="login-form shadow" style="background:#fff;padding:30px;border-radius:8px;">
+                    <div class="text-center">
+                        <h3 class="main-title">Welcome Back</h3>
+                        <p class="subtitle">Sign in to continue to BioLife</p>
+                    </div>
+                    <form asp-action="Login" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Email"></label>
+                            <input asp-for="Email" class="form-control" placeholder="Email address" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Password"></label>
+                            <input asp-for="Password" class="form-control" placeholder="Password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-between">
+                            <label class="checkbox">
+                                <input asp-for="RememberMe" /> Remember me
+                            </label>
+                            <a asp-action="Register" class="link-to">Create account</a>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-bold" style="min-width:160px;">Login</button>
+                        </div>
+                        <div class="form-group text-center">
+                            <span>Don't have an account?</span>
+                            <a asp-action="Register" class="btn btn-thin" style="margin-left:6px;">Register</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

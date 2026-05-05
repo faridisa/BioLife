@@ -2,7 +2,7 @@
 
 namespace BioLife.Models
 {
-    public class AccountViewModels
+    public class LoginViewModel
     {
         [Required]
         [EmailAddress]
@@ -11,7 +11,6 @@ namespace BioLife.Models
         [DataType(DataType.Password)]
         public string Password { get; set; }
         public bool RememberMe { get; set; }
-        public string? ReturnUrl { get; set; }
     }
 
     public class RegisterViewModel

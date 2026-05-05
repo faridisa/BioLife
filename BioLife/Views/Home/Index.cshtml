@@ -7,6 +7,19 @@
     <!-- Main content -->
     <div id="main-content" class="main-content">
 
+        <div class="container sm-margin-top-40px xs-margin-top-30px">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="main-title">Welcome to BioLife</h2>
+                    <p class="subtitle">Please sign in or create an account to continue.</p>
+                    <div class="buttons">
+                        <a asp-controller="Account" asp-action="Login" class="btn btn-bold">Login</a>
+                        <a asp-controller="Account" asp-action="Register" class="btn btn-thin">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Block 01: Main slide block-->
         <div class="main-slide block-slider">
             <ul class="biolife-carousel nav-none-on-mobile" data-slick='{"arrows": true, "dots": false, "slidesMargin": 0, "slidesToShow": 1, "infinite": true, "speed": 800}'>

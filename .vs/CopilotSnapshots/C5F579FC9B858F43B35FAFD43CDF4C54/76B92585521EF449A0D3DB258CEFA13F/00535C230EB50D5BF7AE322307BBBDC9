@@ -1,0 +1,132 @@
+﻿@model BioLife.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="login-wrapper">
+    <div class="container">
+        <div class="row custom-login-box bg-white overflow-hidden m-auto">
+            <div class="col-lg-6 d-none d-lg-flex p-0 align-items-center justify-content-center login-image-side">
+                <div class="text-center text-white p-5 px-xl-5">
+                    <h2 class="font-weight-bold mb-4">BioLife'a Xoş Gəlmisiniz</h2>
+                    <p class="lead" style="font-size: 1.1rem; line-height: 1.6;">Ən təbii və sağlam məhsullarla dolu dünyamıza qoşulun. Sağlam həyat tərzi bir addım uzağınızdadır!</p>
+                </div>
+            </div>
+            <div class="col-lg-6 p-5 p-xl-5 py-4">
+                <div class="login-form-side">
+                    <h3 class="font-weight-bold mb-2">Hesabınıza Giriş</h3>
+                    <p class="text-muted mb-4 pb-2">Xahiş edirik, məlumatlarınızı daxil edin</p>
+
+                    <form asp-action="Login" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3 font-weight-bold"></div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="Email" class="font-weight-bold text-dark">E-poçt ünvanı</label>
+                            <input asp-for="Email" class="form-control form-control-lg custom-input" placeholder="E-poçt ünvanınızı daxil edin" required />
+                            <span asp-validation-for="Email" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="Password" class="font-weight-bold text-dark">Şifrə</label>
+                            <input asp-for="Password" type="password" class="form-control form-control-lg custom-input" placeholder="Şifrənizi daxil edin" required />
+                            <span asp-validation-for="Password" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-4 pb-2">
+                            <div class="form-check custom-checkbox">
+                                <input asp-for="RememberMe" class="form-check-input" id="RememberMeInfo" />
+                                <label class="form-check-label text-muted" for="RememberMeInfo" style="cursor: pointer;">
+                                    Yadda saxla
+                                </label>
+                            </div>
+                            <a asp-action="ForgotPassword" class="text-theme text-decoration-none font-weight-bold">Şifrəmi unutdum?</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-theme btn-block btn-lg font-weight-bold text-white mb-4">
+                            GİRİŞ ET
+                        </button>
+
+                        <div class="text-center text-muted mt-2">
+                            Hesabınız yoxdur? <a asp-action="Register" class="text-theme font-weight-bold text-decoration-none">Qeydiyyatdan keçin</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Esas Wrapper ve Arxa Plan */
+    .login-wrapper {
+        padding: 80px 0;
+        background-color: #f7f9fa;
+    }
+
+    /* Login Qutusu */
+    .custom-login-box {
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        max-width: 1000px;
+        border: 1px solid #efefef;
+    }
+
+    /* Sol Tərəf Rəkil hissə */
+    .login-image-side {
+        background: linear-gradient(135deg, rgba(34, 153, 62, 0.85) 0%, rgba(30, 133, 53, 0.95) 100%), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800') center/cover;
+        min-height: 500px;
+    }
+
+    .login-image-side h2 {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    /* Form stili */
+    .custom-input {
+        background-color: #f9fbfb;
+        border: 2px solid #eef2f5;
+        border-radius: 10px;
+        padding: 0.85rem 1.25rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .custom-input:focus {
+        background-color: #fff;
+        border-color: #2db84c;
+        box-shadow: 0 0 0 0.2rem rgba(45, 184, 76, 0.15);
+        outline: none;
+    }
+
+    /* Btn stili */
+    .btn-theme {
+        background-color: #2db84c;
+        border: 2px solid #2db84c;
+        border-radius: 10px;
+        padding: 0.85rem;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(45, 184, 76, 0.3);
+    }
+
+    .btn-theme:hover {
+        background-color: #24993d;
+        border-color: #24993d;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(45, 184, 76, 0.4);
+    }
+
+    .text-theme {
+        color: #2db84c !important;
+        transition: 0.3s ease;
+    }
+
+    .text-theme:hover {
+        color: #1e8735 !important;
+        text-decoration: underline !important;
+    }
+
+    .form-check-input {
+        cursor: pointer;
+    }
+</style>

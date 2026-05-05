@@ -1,0 +1,289 @@
+﻿@model BioLife.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="login-container">
+    <div class="login-wrap">
+        <div class="login-image">
+            <div class="glass-panel">
+                <h2>BioLife'a Xoş Gəlmisiniz</h2>
+                <p>Ən təbii və sağlam məhsullarla dolu dünyamıza qoşulun. Sağlam həyat tərzi bir addım uzağınızdadır!</p>
+            </div>
+        </div>
+        <div class="login-form-area">
+            <div class="form-header">
+                <h3>Hesabınıza Giriş</h3>
+                <p>Xahiş edirik, məlumatlarınızı daxil edin</p>
+            </div>
+            <form asp-action="Login" method="post" class="custom-form">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="input-group">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                    <input asp-for="Email" class="input-field" placeholder="E-poçt ünvanı" required />
+                    <label asp-for="Email">E-poçt</label>
+                </div>
+                <span asp-validation-for="Email" class="text-danger d-block mb-3" style="font-size:0.85rem"></span>
+
+                <div class="input-group">
+                    <span class="icon"><i class="fas fa-lock"></i></span>
+                    <input asp-for="Password" type="password" class="input-field" placeholder="Şifrə" required />
+                    <label asp-for="Password">Şifrə</label>
+                </div>
+                <span asp-validation-for="Password" class="text-danger d-block mb-3" style="font-size:0.85rem"></span>
+
+                <div class="form-actions">
+                    <label class="remember-me">
+                        <input asp-for="RememberMe" type="checkbox" />
+                        <span class="checkmark"></span>
+                        Yadda saxla
+                    </label>
+                    <a asp-action="ForgotPassword" class="forgot-password">Şifrəmi unutdum?</a>
+                </div>
+
+                <button type="submit" class="btn-login">
+                    <span>GİRİŞ ET</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+                <div class="register-link">
+                    Hesabınız yoxdur? <a asp-action="Register">Qeydiyyatdan keçin</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<style>
+    .login-container {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f4f7f6;
+        padding: 40px 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .login-wrap {
+        width: 100%;
+        max-width: 1000px;
+        background: #ffffff;
+        border-radius: 24px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        display: flex;
+        overflow: hidden;
+    }
+    .login-image {
+        width: 50%;
+        background: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800') center/cover;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 40px;
+    }
+    .glass-panel {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 30px;
+        border-radius: 16px;
+        color: #fff;
+    }
+    .glass-panel h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .glass-panel p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+    .login-form-area {
+        width: 50%;
+        padding: 60px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-header h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 8px;
+    }
+    .form-header p {
+        color: #777;
+        margin-bottom: 40px;
+    }
+    .input-group {
+        position: relative;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .input-group .icon {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        color: #aaa;
+        font-size: 18px;
+        transition: 0.3s ease;
+        z-index: 2;
+    }
+    .input-field {
+        width: 100%;
+        padding: 16px 20px 16px 50px;
+        border: 2px solid #e1e5ee;
+        border-radius: 12px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        outline: none;
+        background: #f9fbfb;
+        box-sizing: border-box;
+    }
+    .input-field::placeholder {
+        color: transparent;
+    }
+    .input-group label {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        color: #999;
+        font-size: 16px;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        z-index: 2;
+    }
+    .input-field:focus,
+    .input-field:not(:placeholder-shown) {
+        border-color: #2db84c;
+        background: #fff;
+    }
+    .input-field:focus ~ label,
+    .input-field:not(:placeholder-shown) ~ label {
+        top: -10px;
+        left: 15px;
+        font-size: 13px;
+        background: #fff;
+        padding: 0 5px;
+        color: #2db84c;
+        font-weight: 600;
+        transform: translateY(0);
+    }
+    .input-field:focus ~ .icon,
+    .input-field:not(:placeholder-shown) ~ .icon {
+        color: #2db84c;
+    }
+    .form-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .remember-me {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 15px;
+        color: #555;
+    }
+    .remember-me input {
+        display: none;
+    }
+    .checkmark {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ccc;
+        border-radius: 6px;
+        margin-right: 10px;
+        position: relative;
+        transition: 0.3s;
+    }
+    .remember-me input:checked + .checkmark {
+        background: #2db84c;
+        border-color: #2db84c;
+    }
+    .remember-me input:checked + .checkmark::after {
+        content: '\2713';
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 13px;
+    }
+    .forgot-password {
+        color: #2db84c;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+    .forgot-password:hover {
+        color: #1e8735;
+    }
+    .btn-login {
+        width: 100%;
+        padding: 18px;
+        background: #2db84c;
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        transition: 0.3s;
+        box-shadow: 0 8px 20px rgba(45, 184, 76, 0.3);
+    }
+    .btn-login:hover {
+        background: #24993d;
+        transform: translateY(-2px);
+        box-shadow: 0 12px 25px rgba(45, 184, 76, 0.4);
+    }
+    .register-link {
+        text-align: center;
+        margin-top: 30px;
+        color: #666;
+        font-size: 15px;
+    }
+    .register-link a {
+        color: #2db84c;
+        font-weight: 700;
+        text-decoration: none;
+        margin-left: 5px;
+    }
+    .register-link a:hover {
+        text-decoration: underline;
+    }
+    @@media (max-width: 992px) {
+        .login-wrap {
+            flex-direction: column;
+            max-width: 500px;
+        }
+        .login-image {
+            width: 100%;
+            height: 250px;
+            padding: 20px;
+        }
+        .glass-panel h2 {
+            font-size: 22px;
+        }
+        .login-form-area {
+            width: 100%;
+            padding: 40px 30px;
+        }
+    }
+</style>

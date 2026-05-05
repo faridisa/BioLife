@@ -1,36 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\asus\\Desktop\\BioLife\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E9D7B381-21B3-C5D5-D81E-527B7E8B3EFE}|BioLife.Persistence\\BioLife.Persistence.csproj|c:\\users\\asus\\desktop\\biolife\\biolife.persistence\\dataseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9D7B381-21B3-C5D5-D81E-527B7E8B3EFE}|BioLife.Persistence\\BioLife.Persistence.csproj|solutionrelative:biolife.persistence\\dataseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9D7B381-21B3-C5D5-D81E-527B7E8B3EFE}|BioLife.Persistence\\BioLife.Persistence.csproj|c:\\users\\asus\\desktop\\biolife\\biolife.persistence\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9D7B381-21B3-C5D5-D81E-527B7E8B3EFE}|BioLife.Persistence\\BioLife.Persistence.csproj|solutionrelative:biolife.persistence\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ADA8AB0-F7A9-BF5B-CEDA-AA40296D7432}|BioLife.Domain\\BioLife.Domain.csproj|c:\\users\\asus\\desktop\\biolife\\biolife.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ADA8AB0-F7A9-BF5B-CEDA-AA40296D7432}|BioLife.Domain\\BioLife.Domain.csproj|solutionrelative:biolife.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FFE8631-3E39-12DB-4640-44CC36357181}|BioLife\\BioLife.csproj|c:\\users\\asus\\desktop\\biolife\\biolife\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FFE8631-3E39-12DB-4640-44CC36357181}|BioLife\\BioLife.csproj|solutionrelative:biolife\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FFE8631-3E39-12DB-4640-44CC36357181}|BioLife\\BioLife.csproj|c:\\users\\asus\\desktop\\biolife\\biolife\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FFE8631-3E39-12DB-4640-44CC36357181}|BioLife\\BioLife.csproj|solutionrelative:biolife\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FFE8631-3E39-12DB-4640-44CC36357181}|BioLife\\BioLife.csproj|c:\\users\\asus\\desktop\\biolife\\biolife\\biolife.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6FFE8631-3E39-12DB-4640-44CC36357181}|BioLife\\BioLife.csproj|solutionrelative:biolife\\biolife.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FFE8631-3E39-12DB-4640-44CC36357181}|BioLife\\BioLife.csproj|c:\\users\\asus\\desktop\\biolife\\biolife\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6FFE8631-3E39-12DB-4640-44CC36357181}|BioLife\\BioLife.csproj|solutionrelative:biolife\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -38,99 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataSeed.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Persistence\\DataSeed.cs",
-              "RelativeDocumentMoniker": "BioLife.Persistence\\DataSeed.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Persistence\\DataSeed.cs",
-              "RelativeToolTip": "BioLife.Persistence\\DataSeed.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAcwCkAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T17:58:36.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Persistence\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "BioLife.Persistence\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Persistence\\DependencyInjection.cs",
-              "RelativeToolTip": "BioLife.Persistence\\DependencyInjection.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwB0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T17:57:17.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Domain\\Entities\\AppUser.cs",
-              "RelativeDocumentMoniker": "BioLife.Domain\\Entities\\AppUser.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife.Domain\\Entities\\AppUser.cs",
-              "RelativeToolTip": "BioLife.Domain\\Entities\\AppUser.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA+wA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T17:42:50.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife\\appsettings.json",
-              "RelativeDocumentMoniker": "BioLife\\appsettings.json",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife\\appsettings.json",
-              "RelativeToolTip": "BioLife\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-04T17:41:12.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BioLife",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife\\BioLife.csproj",
-              "RelativeDocumentMoniker": "BioLife\\BioLife.csproj",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife\\BioLife.csproj",
-              "RelativeToolTip": "BioLife\\BioLife.csproj",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-04T17:21:46.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "BioLife\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "BioLife\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-04T17:15:02.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BioLife\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BioLife\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-04T17:07:49.973Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
