@@ -1,0 +1,78 @@
+﻿@model List<BioLife.Domain.Entities.Product>
+@{
+    ViewBag.Title = "Məhsullar";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Məhsullar</h1>
+    <a href="/Admin/Product/Create" class="btn btn-primary btn-sm shadow-sm">
+        <i class="fas fa-plus fa-sm text-white-50"></i> Yeni Məhsul
+    </a>
+</div>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Şəkil</th>
+                        <th>Ad</th>
+                        <th>Qiymət</th>
+                        <th>Stok</th>
+                        <th>Status</th>
+                        <th>Əməliyyat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in Model)
+                    {
+                        <tr>
+                            <td>@product.Id</td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(product.ImageUrl))
+                                {
+                                    <img src="@product.ImageUrl" width="50" height="50" style="object-fit:cover;" />
+                                }
+                            </td>
+                            <td>@product.Name</td>
+                            <td>@product.Price.ToString("F2") AZN</td>
+                            <td>@product.Stock</td>
+                            <td>
+                                @if (product.IsActive)
+                                {
+                                    <span class="badge badge-success">Aktiv</span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-danger">Deaktiv</span>
+                                }
+                            </td>
+                            <td>
+                                <form method="post" action="/Admin/Product/Delete"
+                                      onsubmit="return confirm('Bu məhsulu silmək istədiyinizə əminsiniz?');">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@product.Id" />
+                                    <button type="submit" class="btn btn-sm btn-danger">
+                                        <i class="fas fa-trash"></i> Sil
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

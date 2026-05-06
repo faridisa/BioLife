@@ -1,0 +1,19 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BioLife.Models
+{
+    public class RegisterViewModel
+    {
+        [Required(ErrorMessage = "Ad və soyad daxil edilməlidir")]
+        public string FullName { get; set; } = null!;
+
+        [Required(ErrorMessage = "Email daxil edilməlidir")]
+        [EmailAddress]
+        public string Email { get; set; } = null!;
+
+        [Required(ErrorMessage = "Şifrə daxil edilməlidir")]
+        [StringLength(100, MinimumLength = 6, ErrorMessage = "Şifrə ən azı 6 simvoldan ibarət olmalıdır")]
+        [DataType(DataType.Password)]
+        public string Password { get; set; } = null!;
+    }
+}

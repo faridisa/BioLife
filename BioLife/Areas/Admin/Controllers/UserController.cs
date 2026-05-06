@@ -1,0 +1,80 @@
+﻿using BioLife.Domain.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+
+namespace BioLife.Areas.Admin.Controllers
+{
+    [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+    public class UserController : Controller
+    {
+        private readonly UserManager<AppUser> _userManager;
+
+        public UserController(UserManager<AppUser> userManager)
+        {
+            _userManager = userManager;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var users = await _userManager.Users.ToListAsync();
+            return View(users);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                TempData["ErrorMessage"] = "İstifadəçi tapılmadı.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null)
+            {
+                TempData["ErrorMessage"] = "İstifadəçi tapılmadı.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            if (await _userManager.IsInRoleAsync(user, "Admin"))
+            {
+                TempData["ErrorMessage"] = "Admin istifadəçisini silə bilməzsiniz!";
+                return RedirectToAction(nameof(Index));
+            }
+
+            try
+            {
+                var roles = await _userManager.GetRolesAsync(user);
+                if (roles.Count > 0)
+                    await _userManager.RemoveFromRolesAsync(user, roles);
+
+                var claims = await _userManager.GetClaimsAsync(user);
+                if (claims.Count > 0)
+                    await _userManager.RemoveClaimsAsync(user, claims);
+
+                var logins = await _userManager.GetLoginsAsync(user);
+                foreach (var login in logins)
+                    await _userManager.RemoveLoginAsync(user, login.LoginProvider, login.ProviderKey);
+
+                var result = await _userManager.DeleteAsync(user);
+                if (result.Succeeded)
+                {
+                    TempData["SuccessMessage"] = "İstifadəçi uğurla silindi.";
+                    return RedirectToAction(nameof(Index));
+                }
+
+                TempData["ErrorMessage"] = "İstifadəçini silərkən xəta baş verdi.";
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"Xəta: {ex.Message}";
+                return RedirectToAction(nameof(Index));
+            }
+        }
+    }
+}

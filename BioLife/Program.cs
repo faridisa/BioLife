@@ -20,9 +20,15 @@ namespace BioLife
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-               await DataSeed.SeedRolesAndAdminUser(services);
+                try
+                {
+                    await BioLife.Persistence.DataSeed.SeedRolesAndAdminUser(services);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Seed zamanı xəta baş verdi: " + ex.Message);
+                }
             }
-
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -39,15 +45,19 @@ namespace BioLife
 
             app.MapStaticAssets();
             app.MapControllerRoute(
+                  name: "areas",
+                  pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}")
+                 .WithStaticAssets();
+            app.MapControllerRoute(
                 name: "areas",
                 pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}")
                 .WithStaticAssets();
-            
+
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}")
                 .WithStaticAssets();
-                
+
 
             app.Run();
         }

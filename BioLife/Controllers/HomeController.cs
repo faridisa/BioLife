@@ -1,12 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BioLife.Persistence.Contexts;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-namespace BioLife.Controllers
+public class HomeController : Controller
 {
-    public class HomeController : Controller
+    private readonly AppDbContext _db;
+
+    public HomeController(AppDbContext db)
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        _db = db;
+    }
+
+    public async Task<IActionResult> Index()
+    {
+        var products = await _db.Products
+            .Where(p => p.IsActive)
+            .OrderByDescending(p => p.CreatedAt)
+            .ToListAsync();
+
+        ViewBag.Products = products;
+        return View();
     }
 }

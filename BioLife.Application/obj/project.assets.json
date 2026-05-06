@@ -1688,7 +1688,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "AutoMapper": "12.0.1",
+          "AutoMapper": "16.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.0",
           "Microsoft.Extensions.Identity.Core": "10.0.7",
           "Microsoft.Extensions.Identity.Stores": "10.0.7"
