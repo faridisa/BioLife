@@ -74,8 +74,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -86,8 +94,7 @@
               "RelativeToolTip": "BioLife\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAANoAAAAAAAAAAAAAAN0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-06T20:44:00.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T20:44:00.501Z"
             },
             {
               "$type": "Document",
@@ -99,8 +106,7 @@
               "RelativeToolTip": "BioLife\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAALAAAAAAAAAAAAAAAL0AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-06T20:31:11.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T20:31:11.871Z"
             },
             {
               "$type": "Document",
@@ -112,8 +118,7 @@
               "RelativeToolTip": "BioLife\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T20:29:48.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T20:29:48.708Z"
             },
             {
               "$type": "Document",
@@ -125,8 +130,7 @@
               "RelativeToolTip": "BioLife\\Areas\\Admin\\Views\\Product\\Create.cshtml",
               "ViewState": "AgIAAH4AAAAAAAAAAAAAAJAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-06T20:12:41.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T20:12:41.777Z"
             },
             {
               "$type": "Document",
@@ -138,8 +142,7 @@
               "RelativeToolTip": "BioLife\\Areas\\Admin\\Views\\Product\\Index.cshtml",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAEsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-06T20:11:35.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T20:11:35.627Z"
             },
             {
               "$type": "Document",
@@ -151,8 +154,7 @@
               "RelativeToolTip": "BioLife.Domain\\Entities\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T19:58:28.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T19:58:28.966Z"
             },
             {
               "$type": "Document",
@@ -164,8 +166,7 @@
               "RelativeToolTip": "BioLife\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAkDAAAAAAAAAAAkwEoEAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-06T19:55:47.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T19:55:47.586Z"
             },
             {
               "$type": "Document",
@@ -175,7 +176,7 @@
               "RelativeDocumentMoniker": "BioLife\\Areas\\Admin\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\asus\\Desktop\\BioLife\\BioLife\\Areas\\Admin\\Controllers\\ProductController.cs",
               "RelativeToolTip": "BioLife\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAkwDAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAFgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-06T19:52:47.514Z",
               "EditorCaption": ""
@@ -190,8 +191,7 @@
               "RelativeToolTip": "BioLife\\Areas\\Admin\\Controllers\\AccountController.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAgwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T19:47:56.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T19:47:56.282Z"
             },
             {
               "$type": "Document",
@@ -203,8 +203,7 @@
               "RelativeToolTip": "BioLife\\Areas\\Admin\\Controllers\\OrderController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T19:52:47.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T19:52:47.622Z"
             },
             {
               "$type": "Document",
@@ -216,8 +215,7 @@
               "RelativeToolTip": "BioLife\\Areas\\Admin\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T19:52:19.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T19:52:19.491Z"
             },
             {
               "$type": "Document",
@@ -229,8 +227,7 @@
               "RelativeToolTip": "BioLife.Persistence\\DependencyInjection.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T19:48:57.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T19:48:57.242Z"
             },
             {
               "$type": "Document",
@@ -242,8 +239,7 @@
               "RelativeToolTip": "BioLife\\Areas\\Admin\\Views\\Account\\Login.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-06T19:48:28.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T19:48:28.873Z"
             },
             {
               "$type": "Document",
@@ -255,8 +251,7 @@
               "RelativeToolTip": "BioLife\\Areas\\Admin\\Controllers\\UserController.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAArwE4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T19:15:58.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T19:15:58.606Z"
             },
             {
               "$type": "Document",
@@ -268,8 +263,7 @@
               "RelativeToolTip": "BioLife\\Views\\Account\\AccessDenied.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-06T19:13:59.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T19:13:59.627Z"
             },
             {
               "$type": "Document",
@@ -281,16 +275,7 @@
               "RelativeToolTip": "BioLife\\Areas\\Admin\\Views\\User\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-06T13:43:33.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2026-05-06T13:43:33.259Z"
             }
           ]
         }
