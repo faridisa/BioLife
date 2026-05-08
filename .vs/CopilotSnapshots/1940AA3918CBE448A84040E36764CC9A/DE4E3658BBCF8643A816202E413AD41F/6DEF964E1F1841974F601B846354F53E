@@ -1,0 +1,68 @@
+﻿using BioLife.Domain.Entities;
+using BioLife.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+
+namespace BioLife.Controllers
+{
+    public class LoginRegisterController : Controller
+    {
+        private readonly SignInManager<AppUser> _signInManager;
+        private readonly UserManager<AppUser> _userManager;
+
+        public LoginRegisterController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager)
+        {
+            _signInManager = signInManager;
+            _userManager = userManager;
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+            {
+                ModelState.AddModelError(string.Empty, "Email və ya şifrə səhvdir.");
+                return View(model);
+            }
+
+            var roles = await _userManager.GetRolesAsync(user);
+            if (!roles.Contains("Admin"))
+            {
+                ModelState.AddModelError(string.Empty, "Sizin admin panelinə giriş hüququnuz yoxdur.");
+                return View(model);
+            }
+
+            // Mövcud açıq hesab varsa çıxış edirik, çünki Admin kimi girməyə çalışır
+            await _signInManager.SignOutAsync();
+
+            var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Index", "Dashboard", new { area = "Admin" });
+            }
+
+            ModelState.AddModelError(string.Empty, "Email və ya şifrə səhvdir.");
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
+    }
+}

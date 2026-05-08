@@ -1,18 +1,17 @@
-using BioLife.Domain.Entities;
+﻿using BioLife.Domain.Entities;
 using BioLife.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BioLife.Areas.Admin.Controllers
+namespace BioLife.Controllers
 {
-    [Area("Admin")]
-    public class AccountController : Controller
+    public class LoginRegisterController : Controller
     {
         private readonly SignInManager<AppUser> _signInManager;
         private readonly UserManager<AppUser> _userManager;
 
-        public AccountController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager)
+        public LoginRegisterController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager)
         {
             _signInManager = signInManager;
             _userManager = userManager;
