@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BioLife.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b8fe800348c6f3592be5dff2d294b5039eace40")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8497754089d5d65b70b45d0f19ac47117e32a6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BioLife.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BioLife.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

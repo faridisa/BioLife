@@ -98,4 +98,5 @@ namespace BioLife.Controllers
 
 
 
-// Salam! Bu kod parçacığı, BioLife adlı bir ASP.NET Core MVC projesinde bir `AccountController` sınıfını tanımlar. Bu sınıf, kullanıcıların giriş yapması, kayıt olması ve çıkış yapması gibi işlemleri yönetir.
+// salam
+//repig
